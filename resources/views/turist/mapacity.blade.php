@@ -92,7 +92,7 @@
                                 <div class="col-md-2">
                                     <div class="side-bar">
                                        <div class="wall-post">
-                                           <p class="text-uppercase">{{$city}}</p>
+                                           <p class="text-uppercase">Angola</p>
                                        <hr>
                                        <ul class="list-group">
                                            <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-header "></span> História</a></li>
@@ -118,23 +118,23 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    
-                                                    <img src="styles/img/angola/mapa_angola.png" class="img-responsive">
-                                                    
+                                                    <div class="text-center">
+                                                    <img src="styles/img/angola/mapa_angola.png">
+                                                    </div>
                                                     <hr>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <h5 class="text-muted text-justify">
-                                                        Luanda é a capital e a maior cidade de Angola. Localizada na costa do Oceano Atlântico, é também o principal porto e centro económico do país. Constitui um município subdividido em seis distritos urbanos e é também a capital da província homónima.
+                                                        Angola, oficialmente República de Angola, é um país da costa ocidental da África, cujo território principal é limitado a norte e a nordeste pela República Democrática do Congo, a leste pela Zâmbia, a sul pela Namíbia e a oeste pelo Oceano Atlântico
                                                     </h5>
-                                                    <p class="text-muted">Fundação: 1575</p>
-                                                    <p class="text-muted">Área: 113 km²</p>
-                                                    <p class="text-muted">Elevação: 6 m</p>
-                                                    <p class="text-muted">Tempo: 29 °C, vento SE a 8 km/h, umidade de 74%</p>
-                                                    <p class="text-muted">Hora local: terça-feira, 10:52</p>
-                                                    <p class="text-muted">População: 2,776 milhões (2005)</p>
+                                                    <p class="text-muted">Capital: Luanda</p>
+                                                    <p class="text-muted">Presidente: José Eduardo dos Santos</p>
+                                                    <p class="text-muted">Moeda: Kwanza</p>
+                                                    <p class="text-muted">Língua oficial: Língua portuguesa</p>
+                                                    <p class="text-muted">Países Vizinhos: República Democrática do Congo, Namíbia, Zâmbia, República do Congo</p>
+                                                    <p class="text-muted">Área: 1.246.700 km² </p>
                                                 </div>
                                             </div>
                                             

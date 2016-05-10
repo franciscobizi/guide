@@ -19,6 +19,12 @@ class TuristController extends BaseController
             return view('turist.turist');
             
         }
+        public function test()
+        {
+            //return view('turist.turist');
+            echo "Testes";
+            
+        }
         
         public function city(Request $request)
         {
@@ -27,10 +33,10 @@ class TuristController extends BaseController
             
         }
         
-        public function mapa()
+        public function mapa(Request $request)
         {
-            
-            return view('turist.mapacity');
+            $city = $request->get('city');
+            return view('turist.guia',['city'=>$city]);
             //echo "I'm getting an response";
         }
         

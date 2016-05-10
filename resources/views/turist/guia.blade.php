@@ -52,14 +52,13 @@
                       <li><a href="#history-modal" data-toggle="modal"><span class="glyphicon glyphicon-bookmark "> </span> Meu histórico</a></li>
                       <li><a href="#reservation-modal" data-toggle="modal"><span class="glyphicon glyphicon-home "></span> Minha reserva</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="{{url('guia')}}"><span class="glyphicon glyphicon-map-marker "></span> Guia automático</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-map-marker "></span> Guia automático</a></li>
                       <li role="separator" class="divider"></li>
-                      
                       <li><a href="{{url('mapa')}}"><span class="glyphicon glyphicon-flag "></span> Cidades</a></li>
                     </ul>
                   </li>
                 </ul>
-                  <form class="navbar-form navbar-left" role="search" method="post" action="{{url('mapa')}}">
+                <form class="navbar-form navbar-left" role="search" method="post" action="{{url('city')}}">
                   <div class="form-group">
                       <input type="text" class="form-control placeholder" name="city" placeholder="Pesquisar cidade...">
                   </div>
@@ -92,7 +91,16 @@
                             
                                 <div class="col-md-2">
                                     <div class="side-bar">
-                                       
+                                       <div class="wall-post">
+                                           <p class="text-uppercase text-muted">gps do guia</p>
+                                       <hr>
+                                       <ul class="list-group">
+                                           <form method="post" action="">
+                                               <div class="form-group"><input class="form-control" name="coordiante" placeholder="Insira o destino..."></div>
+                                               <div class="form-group"><button class="btn btn-block">Começar</button></div>
+                                           </form>
+                                        </ul>                   
+                                       </div>
                                     </div>
                                 </div>
                                 <div class="col-md-7">
@@ -100,76 +108,32 @@
                                         <div class="wall-post">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <form method="post" action="" enctype="multipart/form-data">
-                                                        <span class="glyphicon glyphicon-picture "></span>
-                                                        <div class="upload">
-                                                            <input type="file" name="upload"/>
-                                                            
-                                                        </div>
-                                                        
-                                                    <!--a href="#"><span class="glyphicon glyphicon-picture "></span> Adicionar foto ou video</a-->
+                                                    <h3 class="text-primari text-muted" style="margin-top: 0px;">Permita-me ser o seu guia!</h3>
+                                                    <h5 class="text-primari text-muted" style="margin-top: 0px;"><span class="glyphicon glyphicon-arrow-left"></span> Insira o destino no campo à esquerda.</h5>
                                                     <hr>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" rows="4">Partilhe a emoção da sua viagem aqui...</textarea>
-                                                        </div>
+                                                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:441px;width:700px;'><div id='gmap_canvas' style='height:441px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://proxysitereviews.com/">proxy sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(-8.839987599999999,13.289436799999976),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-8.839987599999999,13.289436799999976)});infowindow = new google.maps.InfoWindow({content:'<strong>Guia turístico</strong><br>Luanda, Angola<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                                                     
                                                     <hr>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="text-right"><button class="btn btn-primary">Partilhar</button></div>
-                                                    </form>
+                                                    <h5 class="text-muted text-justify">
+                                                        Aproveite a viagem, porque com o Guia na mão você vai chegar ao destino. Tenha uma boa viagem.
+                                                    </h5>
+                                                    
                                                 </div>
                                             </div>
                                             
                                         </div>
-                                        <div class="wall-post">
-                                            
-                                            <button type="button" class="close pull-right" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    
-                                                        <a href="#"><img src="styles/img/user.png" width="50" height="50" class="img-rounded"></a>
-                                                       <hr>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    
-                                                        
-                                                    
-                                                  <hr>  
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                   
-                                                            <span class="fa fa-facebook"></span> 
-                                                        
-                                                            <span class="fa fa-google-plus"></span> 
-                                                       
-                                                            <span class="fa fa-star"></span>
-                                                            <div style="padding: 5px"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <form method="post" action="" enctype="multipart/form-data">
-                                                    <div class="form-group">
-                                                            <textarea class="form-control" rows="1">Deixe o seu comentário...</textarea>
-                                                    </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     
                                 </div>
                                 <div class="col-md-3">
