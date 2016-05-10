@@ -54,13 +54,13 @@
                       <li role="separator" class="divider"></li>
                       <li><a href="#"><span class="glyphicon glyphicon-map-marker "></span> Guia automático</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-flag "></span> Cidades</a></li>
+                      <li><a href="{{url('mapa')}}"><span class="glyphicon glyphicon-flag "></span> Cidades</a></li>
                     </ul>
                   </li>
                 </ul>
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search" method="post" action="{{url('city')}}">
                   <div class="form-group">
-                      <input type="text" class="form-control placeholder" placeholder="Pesquisar cidade...">
+                      <input type="text" class="form-control placeholder" name="city" placeholder="Pesquisar cidade...">
                   </div>
                   
                 </form>

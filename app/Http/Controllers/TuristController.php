@@ -27,4 +27,17 @@ class TuristController extends BaseController
             
         }
         
+        public function mapa()
+        {
+            
+            return view('turist.mapacity');
+            //echo "I'm getting an response";
+        }
+        
+        public function guia()
+        {
+            
+            //return view('turist.mapacity');
+            echo "I'm getting an response";
+        }
 }

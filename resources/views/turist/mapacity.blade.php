@@ -52,14 +52,13 @@
                       <li><a href="#history-modal" data-toggle="modal"><span class="glyphicon glyphicon-bookmark "> </span> Meu histórico</a></li>
                       <li><a href="#reservation-modal" data-toggle="modal"><span class="glyphicon glyphicon-home "></span> Minha reserva</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="{{url('guia')}}"><span class="glyphicon glyphicon-map-marker "></span> Guia automático</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-map-marker "></span> Guia automático</a></li>
                       <li role="separator" class="divider"></li>
-                      
                       <li><a href="{{url('mapa')}}"><span class="glyphicon glyphicon-flag "></span> Cidades</a></li>
                     </ul>
                   </li>
                 </ul>
-                  <form class="navbar-form navbar-left" role="search" method="post" action="{{url('city')}}">
+                <form class="navbar-form navbar-left" role="search" method="post" action="{{url('city')}}">
                   <div class="form-group">
                       <input type="text" class="form-control placeholder" name="city" placeholder="Pesquisar cidade...">
                   </div>
@@ -92,7 +91,18 @@
                             
                                 <div class="col-md-2">
                                     <div class="side-bar">
-                                       
+                                       <div class="wall-post">
+                                           <p class="text-uppercase">{{$city}}</p>
+                                       <hr>
+                                       <ul class="list-group">
+                                           <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-header "></span> História</a></li>
+                                           <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-home "></span> Hospedarias</a></li>
+                                           <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-cutlery "></span> Restaurantes</a></li>
+                                           
+                                           <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-heart "></span> Pontos turisticos</a></li>
+                                           <li class="list-group-item"><a href="#" class="text-muted"><span class="glyphicon glyphicon-earphone"></span> Taxis locais</a></li>
+                                        </ul>                   
+                                       </div>
                                     </div>
                                 </div>
                                 <div class="col-md-7">
@@ -100,76 +110,36 @@
                                         <div class="wall-post">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <form method="post" action="" enctype="multipart/form-data">
-                                                        <span class="glyphicon glyphicon-picture "></span>
-                                                        <div class="upload">
-                                                            <input type="file" name="upload"/>
-                                                            
-                                                        </div>
-                                                        
-                                                    <!--a href="#"><span class="glyphicon glyphicon-picture "></span> Adicionar foto ou video</a-->
+                                                    <h3 class="text-primari" style="margin-top: 0px;">Pesquise a cidade clicando por cima dela</h3>
                                                     <hr>
+                                                    
                                                 </div>
                                                 
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" rows="4">Partilhe a emoção da sua viagem aqui...</textarea>
-                                                        </div>
+                                                    <img src="styles/img/angola/mapa_angola.png" class="img-responsive">
                                                     
                                                     <hr>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="text-right"><button class="btn btn-primary">Partilhar</button></div>
-                                                    </form>
+                                                    <h5 class="text-muted text-justify">
+                                                        Luanda é a capital e a maior cidade de Angola. Localizada na costa do Oceano Atlântico, é também o principal porto e centro económico do país. Constitui um município subdividido em seis distritos urbanos e é também a capital da província homónima.
+                                                    </h5>
+                                                    <p class="text-muted">Fundação: 1575</p>
+                                                    <p class="text-muted">Área: 113 km²</p>
+                                                    <p class="text-muted">Elevação: 6 m</p>
+                                                    <p class="text-muted">Tempo: 29 °C, vento SE a 8 km/h, umidade de 74%</p>
+                                                    <p class="text-muted">Hora local: terça-feira, 10:52</p>
+                                                    <p class="text-muted">População: 2,776 milhões (2005)</p>
                                                 </div>
                                             </div>
                                             
                                         </div>
-                                        <div class="wall-post">
-                                            
-                                            <button type="button" class="close pull-right" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    
-                                                        <a href="#"><img src="styles/img/user.png" width="50" height="50" class="img-rounded"></a>
-                                                       <hr>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    
-                                                        
-                                                    
-                                                  <hr>  
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                   
-                                                            <span class="fa fa-facebook"></span> 
-                                                        
-                                                            <span class="fa fa-google-plus"></span> 
-                                                       
-                                                            <span class="fa fa-star"></span>
-                                                            <div style="padding: 5px"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <form method="post" action="" enctype="multipart/form-data">
-                                                    <div class="form-group">
-                                                            <textarea class="form-control" rows="1">Deixe o seu comentário...</textarea>
-                                                    </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     
                                 </div>
                                 <div class="col-md-3">

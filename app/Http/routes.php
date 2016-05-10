@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 Route::get('/login','SController@login');
 Route::get('/{cadastro}','SController@cadastro');
+Route::get('/mapa','TuristController@mapa');
+Route::get('/guia','TuristController@guia');
 Route::post('/turist','TuristController@index');
 Route::post('/city','TuristController@city');
 
